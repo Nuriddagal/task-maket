@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(../fonts/TTLakesCondensed-Regular.eot);
+    src: local('TT Lakes Condensed Regular'), local('TTLakesCondensed-Regular'),
+        url('TTLakesCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url(../fonts/TTLakesCondensed-Regular.woff) format('woff'),
+        url(../fonts/TTLakesCondensed-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(../fonts/TTLakesCompressed-Italic.eot);
+    src: local('TT Lakes Compressed Italic'), local('TTLakesCompressed-Italic'),
+        url('TTLakesCompressed-Italic.eot?#iefix) format')('embedded-opentype'),
+        url(../fonts/TTLakesCompressed-Italic.woff) format('woff'),
+        url(../fonts/TTLakesCompressed-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(../fonts/TTLakesCondensed-Bold.eot);
+    src: local('TT Lakes Condensed Bold'), local('TTLakesCondensed-Bold'),
+        url('TTLakesCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url(../fonts/TTLakesCondensed-Bold.woff) format('woff'),
+        url(../fonts/TTLakesCondensed-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+    width: 100%;
+    font-family: 'TT Lakes Condensed', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.conteiner {
+    width: 80%;
+    margin: -20px auto;
+    background: #F8F8F8;;
+}
+.service {
+    width: 100%;
+	display: flex;	
+    justify-content: space-between;
+    align-content:stretch;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service__communication{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    height: fit-content;
+}
+.service__communication > li > a{
+    font-family: 'TT Lakes Condensed';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-align: right;
+    letter-spacing: -0.2px;
+
+    color: #1B1C21;
+}
+.service__menu{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+li{
+    list-style: none;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    font-family: 'TT Lakes Condensed';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+}
+a:active{
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.title {
+    padding-left: 35px;
+    position: relative;
+    font-family: 'TT Lakes Condensed';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    /* identical to box height, or 143% */
+
+    letter-spacing: -0.6px;
+
+    color: #1B1C21;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    left:0;
+    width: 3px;
+    height: 100%;
+    background: lightgray;
+    border-radius: 2px;
+}
+.about {
+    display: flex;
+    justify-content: space-around;
+	width: 100%;
+
+}
+@media (max-width:1072px) {
+     
+    .about{
+        flex-wrap: wrap;
+        }
+     .about__image{
+         width: 100%;
+         margin: 0;
+     }   
+}
+.about__image{
+    width: 70%;
+    margin:30px 30px 40px 15px;
+}
+span{
+    font-family: 'TT Lakes Compressed';
+}
+.about__text-1{
+    margin:30px 15px 30px 30px;
+    font-family: 'TT Lakes Compressed';
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    letter-spacing: 0.2px;
+    
+    color: #1B1C21;
+ }
+ .checkbox:checked .checkbox__value-2{
+     display: none;
+ }
+ .checkbox__value-2 img{
+     transform: rotateX(180deg);
+     -webkit-transform: rotateX(180deg);
+     -moz-transform: rotateX(180deg);
+     -ms-transform: rotateX(180deg);
+     -o-transform: rotateX(180deg);
+}
+ .about__text-2{
+    margin:30px 15px 30px 30px ;
+    font-family: 'TT Lakes Compressed';
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    letter-spacing: 0.2px;
+    
+    color: #1B1C21;
+    
+    
+ }	
+.checkbox {
+    /* appearance: none; */
+    margin-left: 30px;
+	
+}
+
