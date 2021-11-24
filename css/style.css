@@ -356,13 +356,18 @@ a{
         left: -8%;
     }
     .menu__right > span{
-        right: 135px;
+        right: 140px;
     } 
     .menu__just{
-        right: 5px;
+        right: 10px;
     }
     .menu__doit{
-        right: 65px;
+        right: 70px;
+    }
+}
+@media (max-width:420px) {
+    .menu__left{
+        left: -12%;
     }
 }
 
