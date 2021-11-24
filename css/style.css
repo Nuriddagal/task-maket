@@ -347,19 +347,19 @@ a{
 @media (max-width:640px) {
     .conteiner{
         width: 100%;
-        margin: 0%;
+        margin: -2%;
     }
     .menu__left{
-        left: -8%;
+        left: -14%;
     }
     .menu__right > span{
-        right: 130px;
+        right: 135px;
     } 
     .menu__just{
-        right: 0px;
+        right: 5px;
     }
     .menu__doit{
-        right: 60px;
+        right: 65px;
     }
 }
 
