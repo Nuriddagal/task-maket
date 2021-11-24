@@ -330,6 +330,9 @@ a{
      }
 } 
  @media (max-width:863px) {
+     .conteiner{
+         width: 100%;
+     }
     .right__conteiner{
         display: none;
     } 
