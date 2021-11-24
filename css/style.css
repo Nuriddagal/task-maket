@@ -29,6 +29,7 @@
     font-style: normal;
 }
 body{
+    background-color: antiquewhite;
     width: 100%;
     font-family: 'TT Lakes Condensed', sans-serif;
     font-weight: normal;
@@ -43,15 +44,163 @@ body{
     width: 100%;
 	display: flex;	
     justify-content: space-between;
-    align-content:stretch;
+    align-content:center;
     align-items: center;
     flex-wrap: wrap;
 }
 .service__communication{
+    position: relative;
     display: flex;
     padding: 0 20px;
     justify-content: space-between;
-    height: fit-content;
+    height: fit-content;  
+}
+  /* menu style */
+.menu{
+    background-color: white;  
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+}
+  /* menu right  */
+.menu__phone{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../img/ic/call.svg);
+    position: absolute;
+    right: 320px;
+    
+}
+.menu__chat{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../img/ic/chat.svg);
+    position: absolute;
+    right: 260px;
+}
+.menu__profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../img/ic/profile.svg);
+    position: absolute;
+    right: 200px;
+}
+.menu__doit{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/b4/repair.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    right: 100px;
+    background-size: 40px; 
+}
+.menu__just{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/gg/checkstatus.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    right: 40px;
+    
+    background-size: 40px; 
+}
+.menu__right{
+    display: flex;
+    position: relative;
+}
+.menu__right > span{
+    position: absolute;
+    width: 3px;
+    height: 35px;
+    background: #EAEAEA;;
+    right: 170px;
+    top:25px;
+}
+.right__conteiner{
+    display: flex;
+}
+   /* menu rigth end  */
+   /* left start */
+.menu__left{
+    display: flex;
+    position: relative;
+    left: -4%;
+}
+.menu__burger{
+    position: relative;
+    margin: 20px -15px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.menu__element{
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    top:22px;
+    left:11px;
+    background-color: white;
+    
+}
+.menu__element::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    top:-8px;
+    left:0px;
+    background-color: white;
+}
+.menu__element::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    top:8px;
+    left:0px;
+    background-color: white;
+    
+}
+.line{
+    position: absolute;
+    width: 3px;
+    height: 35px;
+    background: #EAEAEA;;
+    left: 95px;
+    top:25px;
+}
+.logo{
+    margin-left: 35px;
+    position: absolute; 
+    width: 98px;
+    height: 52px;
+    background-image: url(../img/Group.svg);
+}
+    /* left end  */
+.service__communication > li{
+    margin-right: 50px ;
 }
 .service__communication > li > a{
     font-family: 'TT Lakes Condensed';
@@ -65,12 +214,48 @@ body{
 
     color: #1B1C21;
 }
-.service__menu{
+
+.doit{
+    position: relative;
+}
+.doit > span{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/b4/repair.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    right: -50px;
+    top:-8px;
+    background-size: 40px; 
+}
+.just > span{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/gg/checkstatus.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    right: 40px;
+    top:13px;
+    background-size: 40px; 
+}
+/* menu style end */
+.service__point{
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
+    margin-top: -2%;
+    margin-bottom: -2%;
 }
-
+@media (min-width:1120px) {
+    .service__point{
+        margin-bottom: 0%;
+    }
+}
+.service__point li{
+    margin-top: -10px;
+}
 li{
     list-style: none;
     padding: 20px;
@@ -84,7 +269,7 @@ a{
     letter-spacing: -0.2px;
     color: #7E7E82;
 }
-a:active{
+.service__point > li > a:active{
     border: 2px solid lightgray;
     border-radius: 5px;
     background: white;
@@ -119,29 +304,55 @@ a:active{
 }
 .about {
     display: flex;
-    justify-content: space-around;
 	width: 100%;
 
 }
-@media (max-width:1072px) {
+@media (max-width:1120px) {
      
-    .about{
+    .about > img{
+        width: 40%;
+        object-fit: contain;
+
+     }
+    
+} 
+ @media (max-width:920px) { 
+     .menu{
+        display: flex;
+        justify-content: space-between;
+     }
+     .service__communication{
+         display: none;
+     }
+    .about > img{
+        width: 30%;
+        object-fit: cover;
+     }
+} 
+ @media (max-width:863px) {
+    .right__conteiner{
+        display: none;
+    } 
+    .about {
         flex-wrap: wrap;
-        }
-     .about__image{
-         width: 100%;
-         margin: 0;
-     }   
-}
+     }
+    .about > img{
+       width: 100%;
+        margin:20px 0;
+        
+     }
+} 
+
 .about__image{
-    width: 70%;
-    margin:30px 30px 40px 15px;
+    width: 50%;
+    object-fit:cover;
+    margin:30px 30px 40px 15px; 
 }
 span{
     font-family: 'TT Lakes Compressed';
 }
 .about__text-1{
-    margin:30px 15px 30px 30px;
+    margin:35px 15px 30px 30px;
     font-family: 'TT Lakes Compressed';
     font-size: 14px;
     line-height: 20px;
@@ -150,8 +361,11 @@ span{
     
     color: #1B1C21;
  }
- .checkbox:checked .checkbox__value-2{
-     display: none;
+ .checkbox:checked ~ .checkbox__value-2{
+    display: inline;
+ }
+ .checkbox:checked ~ .checkbox__value-1{
+    display: none;
  }
  .checkbox__value-2 img{
      transform: rotateX(180deg);
@@ -159,6 +373,10 @@ span{
      -moz-transform: rotateX(180deg);
      -ms-transform: rotateX(180deg);
      -o-transform: rotateX(180deg);
+    
+}
+.checkbox__value-2{
+   display: none;
 }
  .about__text-2{
     margin:30px 15px 30px 30px ;
@@ -173,8 +391,9 @@ span{
     
  }	
 .checkbox {
-    /* appearance: none; */
+    appearance: none; 
     margin-left: 30px;
-	
+	margin-top: -3%;
+    margin-bottom: 30px;
 }
 
