@@ -311,6 +311,9 @@ a{
         display: flex;
         justify-content: space-between;
      }
+     .service__communication{
+         display: none;
+     }
     .about > img{
         width: 40%;
         object-fit: contain;
