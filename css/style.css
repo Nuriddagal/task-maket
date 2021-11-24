@@ -118,7 +118,6 @@ body{
     background-position: right;
     position: absolute;
     right: 40px;
-    
     background-size: 40px; 
 }
 .menu__right{
@@ -333,10 +332,6 @@ a{
      }
 } 
  @media (max-width:863px) {
-     .conteiner{
-         width: 100%;
-         margin: 0;
-     }
     .right__conteiner{
         display: none;
     } 
@@ -349,6 +344,24 @@ a{
         
      }
 } 
+@media (max-width:640px) {
+    .conteiner{
+        width: 100%;
+        margin: 0%;
+    }
+    .menu__left{
+        left: -8%;
+    }
+    .menu__right > span{
+        right: 130px;
+    } 
+    .menu__just{
+        right: 0px;
+    }
+    .menu__doit{
+        right: 60px;
+    }
+}
 
 .about__image{
     width: 50%;
