@@ -335,6 +335,7 @@ a{
  @media (max-width:863px) {
      .conteiner{
          width: 100%;
+         margin: 0;
      }
     .right__conteiner{
         display: none;
