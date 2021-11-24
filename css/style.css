@@ -308,7 +308,10 @@ a{
 
 }
 @media (max-width:1120px) {
-     
+    .menu{
+        display: flex;
+        justify-content: space-between;
+     }
     .about > img{
         width: 40%;
         object-fit: contain;
