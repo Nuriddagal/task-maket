@@ -136,7 +136,7 @@ body{
     background-image: url(../img/ic/call.svg);
     position: absolute;
     right: 320px;
-    top: 20px;
+
 }
 .menu__chat{
     width: 40px;
@@ -149,7 +149,7 @@ body{
     background-image: url(../img/ic/chat.svg);
     position: absolute;
     right: 260px;
-    top: 20px;
+    
 }
 .menu__profile{
     width: 40px;
@@ -578,7 +578,6 @@ label{
     
  }
 .checkbox {
-    order:;
     appearance: none; 
     margin-left: 30px;
 	margin-top: -3%;
