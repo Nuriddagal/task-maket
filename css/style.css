@@ -206,7 +206,9 @@ body{
     position: relative;
     left: -4%;
 }
-
+.menu__burger:focus{
+    outline: none;
+}
 .menu__burger{
     appearance: none;
     -webkit-appearance: none;
