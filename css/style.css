@@ -211,8 +211,8 @@ body{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 1px;
-    height: 1px;
+    width: .01px;
+    height: .01px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     position: relative;
@@ -587,8 +587,8 @@ label{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 1px;
-    height: 1px;
+    width: .01px;
+    height: .01px;
     overflow: hidden;
     clip: rect(0 0 0 0); 
     margin-left: 30px;
