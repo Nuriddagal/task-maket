@@ -162,11 +162,6 @@ body{
     background-image: url(../img/ic/profile.svg);
     position: absolute;
     right: 200px;
-    transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -o-transform: translateX(0px);
 }
 .menu__doit{
     width: 40px;
@@ -211,24 +206,7 @@ body{
     position: relative;
     left: -4%;
 }
-.right__conteiner > label{
-    display: flex;
-    height:50%;
-}
-.menu__burger-laptop{
-    appearance: none;
-    position: relative;
-    margin: 20px -15px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #FF3E79;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    z-index: 1;
-}
+
 .menu__burger{
     appearance: none;
     position: relative;
