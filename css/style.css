@@ -525,24 +525,41 @@ a{
     }
 }
 @media (max-width:420px) {
+    
+    .menu__left{
+        left: -16%;
+    }
     .logo{
+        top: 15px;
+        left:75px;
+        width: 80%;
+        background-repeat: no-repeat;
+        background-position:0 5px;
+    }
+    .line{
+        left: 100px;
+    }
+    .menu__right span{
+        right: 130px;
+    }
+}
+@media (max-width:320px) {
+    .logo{
+        top: 15px;
         left:60px;
         width: 70%;
         background-repeat: no-repeat;
         background-position:0 5px;
     }
-    .menu__left{
-        left: -16%;
-    }
     .menu__burger{
         width: 30px;
         height: 30px;
-        top:5px
+        
     }
     .burger+span{
         width:15px;
         margin-top: -1px;
-        top:40px;
+        top:35px;
         left: 33px;
         height: 2px;
     }
@@ -585,7 +602,7 @@ a{
         z-index: 1;
     }
     .burger:checked ~ .burger__profile{
-        top: 60px;
+        top: 55px;
         left: 40px;
         z-index: 1;
     }
@@ -593,23 +610,25 @@ a{
         left:85px;
         width:2px;
         height:30px;
+        top:20px;
     }
     .menu__right span{
         width:2px;
         height:30px;
         right:85px;
+        top: 20px;
     }
     .menu__just{
         width:30px;
         height:30px;
         background-size: 30px;
-        top: 25px;
+        top: 20px;
     }
     .menu__doit{
         width:30px;
         height:30px;
         background-size: 30px;
-        top: 25px;
+        top: 20px;
         right: 50px;
     }
 }
