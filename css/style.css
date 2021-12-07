@@ -287,6 +287,7 @@ body{
     width: 98px;
     height: 52px;
     background-image: url(../img/Group.svg);
+    background-size: contain;
 }
     /* left end  */
 .service__communication > li{
@@ -491,9 +492,13 @@ a{
     
 } 
 @media (max-width:640px) {
+    body{
+        padding: 0;
+        margin:0;
+    }
     .conteiner{
         width: 100%;
-        margin: -2%;
+        margin: 0;
     }
     .menu__left{
         left: -8%;
@@ -509,8 +514,92 @@ a{
     }
 }
 @media (max-width:420px) {
+    .logo{
+        left:60px;
+        width: 70%;
+        background-repeat: no-repeat;
+        background-position:0 5px;
+    }
     .menu__left{
-        left: -12%;
+        left: -16%;
+    }
+    .menu__burger{
+        width: 30px;
+        height: 30px;
+        top:5px
+    }
+    .burger+span{
+        width:15px;
+        margin-top: -1px;
+        top:40px;
+        left: 33px;
+        height: 2px;
+    }
+    .burger+span::after{
+        width:15px;
+        height: 2px;
+        margin-top: -1px;
+    }
+    .burger+span::before{
+        width:15px;
+        height: 2px;
+        margin-bottom: -2px;
+    }
+    .burger:checked + .menu__element::before{
+        transform: rotateZ(45deg) translateX(3.5px) translateY(.5px);
+        -webkit-transform: rotateZ(45deg) translateX(3.5px) translateY(.5px);
+        -moz-transform: rotateZ(45deg) translateX(3.5px) translateY(.5px);
+        -ms-transform: rotateZ(45deg) translateX(3.5px) translateY(.5px);
+        -o-transform: rotateZ(45deg) translateX(3.5px) translateY(.5px);
+}
+    .burger:checked + .menu__element::after{
+        transform: rotateZ(-45deg) translateX(2.5px) translateY(.5px);
+        -webkit-transform: rotateZ(-45deg) translateX(2.5px) translateY(.5px);
+        -moz-transform: rotateZ(-45deg) translateX(2.5px) translateY(.5px);
+        -ms-transform: rotateZ(-45deg) translateX(2.5px) translateY(.5px);
+        -o-transform: rotateZ(-45deg) translateX(2.5px) translateY(.5px);
+}
+    .burger:checked + .menu__element{
+        height: 0;
+        width: 0;
+    }
+    .burger:checked ~ .burger__phone{
+        top: 10px;
+        left: 55px;
+          z-index: 1;
+    }
+    .burger:checked ~ .burger__chat{
+        left: 60px;
+        top:37px;
+        z-index: 1;
+    }
+    .burger:checked ~ .burger__profile{
+        top: 60px;
+        left: 40px;
+        z-index: 1;
+    }
+    .line{
+        left:85px;
+        width:2px;
+        height:30px;
+    }
+    .menu__right span{
+        width:2px;
+        height:30px;
+        right:85px;
+    }
+    .menu__just{
+        width:30px;
+        height:30px;
+        background-size: 30px;
+        top: 25px;
+    }
+    .menu__doit{
+        width:30px;
+        height:30px;
+        background-size: 30px;
+        top: 25px;
+        right: 50px;
     }
 }
 
