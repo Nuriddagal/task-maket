@@ -1,3 +1,7 @@
+*{
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
 @font-face {
     font-family: 'TT Lakes Condensed';
     src: url(../fonts/TTLakesCondensed-Regular.eot);
