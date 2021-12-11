@@ -572,11 +572,6 @@ a{
          -ms-transition: 1s ease;
          -o-transition: 1s ease;
          z-index: 2;
-         transform: matrix(-1, 0, 0, 1, 0, 0);
-         -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
-         -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
-         -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
-         -o-transform: matrix(-1, 0, 0, 1, 0, 0);
 }
     .logo-2{
         margin-left: 70%;
@@ -591,11 +586,6 @@ a{
     .burger:checked ~ .menu{
         left: 0px;
         box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-        transform: matrix(1, 0, 0, 1, 0, 0);
-        -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
-        -moz-transform: matrix(1, 0, 0, 1, 0, 0);
-        -ms-transform: matrix(1, 0, 0, 1, 0, 0);
-        -o-transform: matrix(1, 0, 0, 1, 0, 0);
 }
     .burger:checked ~ .menu .logo{
         display: none;
