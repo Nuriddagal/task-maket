@@ -34,7 +34,7 @@
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: #F8F8F8;
     width: 100%;
     font-family: 'TT Lakes Condensed', sans-serif;
     font-weight: normal;
@@ -74,7 +74,7 @@ body{
 }
 .menu{
     width: 320px;
-    height: 100%;
+    height: 110%;
     background: #fff;
     flex-shrink: 0;
 }

@@ -1,6 +1,9 @@
 .dark-themes{
     background-color: darkslategray;
 }
+.dark-themes body{
+    background-color: black;
+}
 .dark-themes .conteiner{
     background-color: darkslategrey;
 }
