@@ -13,12 +13,15 @@
 .dark-themes .conteiner__box{
     background-color: darkslategray;
 }
-
 .dark-themes .conteiner__box .header__connection{
     background-color: #212725;
 }
 .dark-themes .menu a{
     color: #fff;
+}
+.dark-themes .conteiner__box .header__communication a:hover{
+    color: lightseagreen;
+    background-color: darkslategray;
 }
 .dark-themes .menu a:hover{
     color: lightseagreen;
