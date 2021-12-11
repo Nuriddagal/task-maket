@@ -1,5 +1,5 @@
 *{
-    transition-duration: 1s;
+    transition-duration: .3s;
     transition-timing-function: ease-in-out;
 }
 @font-face {
