@@ -35,13 +35,15 @@ body{
     font-family: 'TT Lakes Condensed', sans-serif;
     font-weight: normal;
     font-style: normal;
+    padding: 0;
+    margin: 0;
 }
 .conteiner > ul{
     margin: -20px;
 }
 .conteiner {
     width: 100%;
-    height: 100%;
+    height: 110%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -68,6 +70,7 @@ body{
 }
 .menu{
     width: 320px;
+    height: 100%;
     background: #fff;
     flex-shrink: 0;
 }
@@ -420,6 +423,30 @@ main{
 .header__communication > li{
     margin-right: 50px ;
 }
+.theme-button{
+    padding: .33em .66em .33em 1.66em;
+    border: 1px solid rosybrown;
+    border-radius: 5px;
+    margin-bottom:  10px ;
+    transform: translateY(-10px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-family: 'TT lakes Condensed';
+    font-size: 15px;
+    background-image: url(../img/ic/light_mode_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 3px 5px;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+.theme-button:hover{
+    background-color: white;
+}
 .header__communication > li > a{
     font-family: 'TT Lakes Condensed';
     font-weight: bold;
@@ -565,14 +592,19 @@ a{
      }
      .menu{
          position: absolute;
-         left:-320px;
+         transform: translateX(-320px);
          transition: 1s ease;
          -webkit-transition: 1s ease;
          -moz-transition: 1s ease;
          -ms-transition: 1s ease;
          -o-transition: 1s ease;
          z-index: 2;
+         -webkit-transform: translateX(-320px);
+         -moz-transform: translateX(-320px);
+         -ms-transform: translateX(-320px);
+         -o-transform: translateX(-320px);
 }
+    
     .logo-2{
         margin-left: 70%;
     }
@@ -584,8 +616,12 @@ a{
         z-index: 3;
     }
     .burger:checked ~ .menu{
-        left: 0px;
+        transform: translateX(0);
         box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
 }
     .burger:checked ~ .menu .logo{
         display: none;
@@ -632,6 +668,7 @@ a{
         display: flex;
         justify-content: space-between;
      }
+    
      .header__communication{
          display: none;
      }
@@ -641,6 +678,9 @@ a{
      }
     .conteiner__box{
         width: 100%;
+    }
+    .conteiner{
+        height: 120%;
     }
 } 
 

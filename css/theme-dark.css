@@ -1,0 +1,69 @@
+.dark-themes{
+    background-color: darkslategray;
+}
+.dark-themes .conteiner{
+    background-color: darkslategrey;
+}
+.dark-themes .menu{
+    background-color: #1f2422;
+}
+.dark-themes .conteiner__box{
+    background-color: darkslategray;
+}
+
+.dark-themes .conteiner__box .header__connection{
+    background-color: #212725;
+}
+.dark-themes .menu a{
+    color: #fff;
+}
+.dark-themes .menu a:hover{
+    color: lightseagreen;
+}
+.dark-themes .menu .menu__link-active{
+    color: lightseagreen;
+}
+.dark-themes .menu .menu__ru-active{
+    color: lightseagreen;
+}
+.dark-themes .conteiner__box .title{
+    color: darkturquoise;
+}
+.dark-themes .line-1{
+    background-color: darkturquoise;
+}
+.dark-themes .connection span{
+    background-color: darkturquoise;
+}
+.dark-themes .header a{
+    color: floralwhite;
+}
+.dark-themes .header a:hover{
+    background-color: gray;
+    border-color: rosybrown;
+}
+.dark-themes .theme-button{
+    background-color: dimgray;
+    background-image: url(../img/ic/nightlight_round_black_24dp.svg);
+    color: white;
+}
+.dark-themes .conteiner__box .more__value-1{
+    color: darkturquoise;
+}
+.dark-themes .conteiner__box .more__value-2{
+    color: darkturquoise;
+}
+.dark-themes .theme-button:hover{
+    background-color: lightseagreen;
+}
+.dark-themes .logo-1,
+.dark-themes .logo-2{
+    filter: brightness(1.5);
+    -webkit-filter: brightness(1.5);
+}
+.dark-themes .conteiner__box .about__text-1{
+    color: lightsteelblue;
+}
+.dark-themes .conteiner__box .about__text-2{
+    color: lightsteelblue;
+}
