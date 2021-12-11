@@ -5,35 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task-maket</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="conteiner">
-        <header class="header">
+        <input type="checkbox" id="burger" class="burger">
+        <label for="burger" class="menu__burger"><span class="menu__element"></span>
+            </label>
+            <ul>
+            <span class="line-1"></span>
+            <li><a href="#" class="logo-1"><span></span></a></li>
+        </ul>
+        <menu class="menu">
 
-            <ul class="header__menu-leptop-an-phone menu">
-                <ul class="menu__left">
-                    <label class="menu__smart"><input type="checkbox" class="menu__burger burger"><span class="menu__element"></span>
-                        <a href="#" class="menu__smart-phone">
-                        </a>
-                        <a href="#" class="menu__smart-chat"></a>
-                        <a href="#" class="menu__smart-profile"></a>
-                    </label>
-                    <span class="line"></span>
-                    <li><a href="#" class="header__link logo"><span></span></a></li>
+
+            <ul>
+                <li></li>
+            </ul>
+            <aside class="menu__vertical">
+                <ul class="menu__top">
+                    <li><a href="#" class="menu__logo logo-2"><img src="/img/Group.svg" alt=""></a></li>
+                    <li><a href="#" class="menu__search"></a></li>
                 </ul>
-                <ul class="menu__right right">
+                <ul class="menu__middle">
+                    <li><a href="#">Ремонт техники</a></li>
+                    <li><a class="menu__link-active" href="#">Услуги и сервисы </a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Продавцам техники</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                    <li><a href="#">Производителям</a></li>
+                    <li><a href="#">Наши сервиснае сентры</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="menu__bottom">
+                    <li><a href="#" class="menu__phone">
+                    </a></li>
+                <li><a href="#" class="menu__chat"></a></li>
+                <li><a href="#" class="menu__profile"></a></li>
+                    <li><a href="#" class="menu__mail">mail@cps.com</a></li>
+                <li class="menu__li"><a class="menu__number" href="tel:+ 8-800-890-8900">8 800 890 8900</a></li>
+                <li><a href="#" class="menu__ru-active">RU</a> <a href="#" class="menu__en">EN</a> <a href="#" class="menu__ch">CH</a></li>
+            </ul>
+            </aside>
+        </menu>
+        <div class="conteiner__box">
+        <header class="header">
+            <ul class="header__connection connection">
+                <ul class="connection__right right">
                     <ul class="right__conteiner">
-                        <li><a href="#" class="menu__phone">
+                        <li><a href="#" class="right__phone">
                             </a></li>
-                        <li><a href="#" class="menu__chat"></a></li>
-                        <li><a href="#" class="menu__profile"></a></li>
+                        <li><a href="#" class="right__chat"></a></li>
+                        <li><a href="#" class="right__profile"></a></li>
                     </ul>
                     <span></span>
-                    <li><a href="#" class="menu__doit"></a></li>
-                    <li><a href="#" class="menu__just"></a></li>
+                    <li><a href="#" class="connection__doit"></a></li>
+                    <li><a href="#" class="connection__just"></a></li>
                 </ul>
             </ul>
             <h1 class="header__title title">Услуги и сервисы</h1>
@@ -52,27 +82,29 @@
             </nav>
         </header>
         <main>
-        <section class="about">
-            <div class="about__conteiner">
+            <section class="about">
+                <div class="about__conteiner">
                     <p class="about__text-1">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                         Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                     </p>
                     <label for="check" class="about__more more">
-                    <input type="checkbox" id="check" class="about__checkbox checkbox" checked>
-                    <p class="about__text-2">
-                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
-                        большое
-                        количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                        очередь, советуют нас родным и близким.</p>
-                    <span class="more__value-1"><img src="./img/b42/icon.svg" alt=""> Читать
-                        дальше</span> <span class="more__value-2"><img src="./img/b42/icon.svg" alt="">
-                        Скрыть</span>
+                        <input type="checkbox" id="check" class="about__checkbox checkbox" checked>
+                        <p class="about__text-2">
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                            большое
+                            количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в
+                            свою
+                            очередь, советуют нас родным и близким.</p>
+                        <span class="more__value-1"><img src="./img/b42/icon.svg" alt=""> Читать
+                            дальше</span> <span class="more__value-2"><img src="./img/b42/icon.svg" alt="">
+                            Скрыть</span>
 
-                </label>
-            </div>
-            <img src="./img/530px.jpg" alt="company_logo" class="about__image">
-        </section>
-    </main>
+                    </label>
+                </div>
+                <img src="./img/530px.jpg" alt="company_logo" class="about__image">
+            </section>
+        </main>
+    </div>
     </div>
 </body>
 
