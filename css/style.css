@@ -962,4 +962,79 @@ label{
 	margin-top: -3%;
     margin-bottom: 30px;
 }
+/* slider */
+.repairedBrands__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+    padding-left: 32px;
+}
+.repairedBrands__list{
+    display: inline-flex;
+    width: 240px;
+    height: 72px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.repairedBrands__arrow{
+    width:40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    background: url(../img/slide-img/dropdown.png) no-repeat center;
+    border-radius: 20px;
+}
+.lenovo{
+    display: inline-block;
+    background: url(../img/slide-img/Bitmap.png) center no-repeat;
+    width: 108px;
+    height: 32px;
+}
+.samsung{
+    display: inline-block;
+    background: url(../img/slide-img/Bitmap3.png) center no-repeat;
+    width: 118px;
+    height: 38.5px;
+}
+.apple{
+    display: inline-block;
+    background: url(../img/slide-img/Bitmap2.png) center no-repeat;
+    width: 44px;
+    height: 44px;
+}
+.viewSonic{
+    display: inline-block;
+    background: url(../img/slide-img/Bitmap1.png) center no-repeat;
+    width: 128px;
+    height: 21px;
+}
+.bosch{
+    display: inline-block;
+    background: url(../img/slide-img/Bitmap7.png) center no-repeat;
+    width: 128px;
+    height: 28.6px;
+}
+.hp{
+    display: inline-block;
+    background: url(../img/slide-img/Bitmap6.png) center no-repeat;
+    width: 52px;
+    height: 52px;
+}
+.acer{
+    display: inline-block;
+    background: url(../img/slide-img/Bitmap5.png) center no-repeat;
+    width: 94px;
+    height: 24px;
+}
+.sony{
+    display: inline-block;
+    background: url(../img/slide-img/Bitmap4.png) center no-repeat;
+    width: 128px;
+    height: 25.6px;
+}
 
+.
+/* end-slider */
