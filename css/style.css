@@ -81,7 +81,7 @@ body{
 .menu__vertical{
     width: 250px;
 }
-.menu__burger{
+.burger__label{
     display: none;
 }
 .menu__line{
@@ -316,7 +316,7 @@ main{
 .burger:focus{
     outline: none;
 }
-.menu__burger{
+.burger__label{
     position: relative;
     margin: 20px -15px;
     width: 40px;
@@ -329,14 +329,14 @@ main{
     -o-border-radius: 50%;
     z-index: 1;
 }
-.burger:checked ~ .menu__burger > .menu__element{
+.burger:checked ~ .burger__label > .burger__element{
     width: 0;
     height: 0;
 }
 .burger{
     display: none;
 }
-.menu__element{
+.burger__element{
     width: 15px;
     height: 3px;
     top:18px;
@@ -350,7 +350,7 @@ main{
     -ms-transition: 0.1s;
     -o-transition: 0.1s;
 }
-.menu__element::before{
+.burger__element::before{
     content: '';
     transform-origin: left center;
     position: absolute;
@@ -365,7 +365,7 @@ main{
     -ms-transition: .4s all;
     -o-transition: .4s all;
 }
-.menu__element::after{
+.burger__element::after{
     content: '';
     transform-origin: left center;
     position: absolute;
@@ -380,7 +380,7 @@ main{
     -ms-transition: .4s all;
     -o-transition: .4s all;
 }
-.menu__burger{
+.burger__label{
     width: 40px;
     height: 40px;
 }
@@ -611,7 +611,7 @@ a{
     .logo-2{
         margin-left: 70%;
     }
-    .menu__burger{
+    .burger__label{
         display: inline-block;
         position:absolute;
         left: 50px;
@@ -629,14 +629,14 @@ a{
     .burger:checked ~ .menu .logo{
         display: none;
     }
-    .burger:checked ~ .menu__burger .menu__element::before{
+    .burger:checked ~ .burger__label .burger__element::before{
         transform: rotateZ(45deg) translateX(2px) translateY(-3px);
         -webkit-transform: rotateZ(45deg) translateX(2px) translateY(-3px);
         -moz-transform: rotateZ(45deg) translateX(2px) translateY(-3px);
         -ms-transform: rotateZ(45deg) translateX(2px) translateY(-3px);
         -o-transform: rotateZ(45deg) translateX(2px) translateY(-3px);
     }
-    .burger:checked ~ .menu__burger .menu__element::after{
+    .burger:checked ~ .burger__label .burger__element::after{
         transform: rotateZ(-45deg) translateX(1.3px) translateY(2.5px);
         -webkit-transform: rotateZ(-45deg) translateX(1.3px) translateY(2.5px);
         -moz-transform: rotateZ(-45deg) translateX(1.3px) translateY(2.5px);
@@ -644,7 +644,7 @@ a{
         -o-transform: rotateZ(-45deg) translateX(1.3px) translateY(2.5px);
     }
     
-    .burger:checked ~ .menu__burger .menu__element{
+    .burger:checked ~ .burger__label .burger__element{
         height: 0px;
         width: 0;
     }
@@ -697,14 +697,14 @@ a{
     .connection__line{
         left: 55px;
     }
-    .burger:checked + .menu__burger .menu__element::before{
+    .burger:checked + .burger__label .burger__element::before{
         transform: rotateZ(45deg) translateX(2px) translateY(-3px);
         -webkit-transform: rotateZ(45deg) translateX(2px) translateY(-3px);
         -moz-transform: rotateZ(45deg) translateX(2px) translateY(-3px);
         -ms-transform: rotateZ(45deg) translateX(2px) translateY(-3px);
         -o-transform: rotateZ(45deg) translateX(2px) translateY(-3px);
     }
-    .burger:checked + .menu__burger .menu__element::after{
+    .burger:checked + .burger__label .burger__element::after{
         transform: rotateZ(-45deg) translateX(1.3px) translateY(2.5px);
         -webkit-transform: rotateZ(-45deg) translateX(1.3px) translateY(2.5px);
         -moz-transform: rotateZ(-45deg) translateX(1.3px) translateY(2.5px);
@@ -712,7 +712,7 @@ a{
         -o-transform: rotateZ(-45deg) translateX(1.3px) translateY(2.5px);
     }
     
-    .burger:checked + .menu__burger .menu__element{
+    .burger:checked + .burger__label .burger__element{
         height: 0px;
         width: 0;
     }
@@ -769,7 +769,7 @@ a{
     .menu{
         height: 120%;
     }
-    .menu__burger{
+    .burger__label{
         left:25px;
     }
     .menu__middle li{
@@ -807,36 +807,36 @@ a{
         background-repeat: no-repeat;
         background-position:0 5px;
     }
-    .menu__burger{
+    .burger__label{
         width: 30px;
         height: 30px;
         top: 30px;
     }
-    .menu__burger .menu__element{
+    .burger__label .burger__element{
         width:15px;
         margin-top: -1px;
         top:15px;
         left: 58px;
         height: 2px;
     }
-    .menu__burger .menu__element::after{
+    .burger__label .burger__element::after{
         width:15px;
         height: 2px;
         margin-top: -1px;
     }
-    .menu__burger .menu__element::before{
+    .burger__label .burger__element::before{
         width:15px;
         height: 2px;
         margin-bottom: -2px;
     }
-    .burger:checked + .menu__burger > .menu__element::before{
+    .burger:checked + .burger__label > .burger__element::before{
         transform: rotateZ(45deg) translateX(3.5px) translateY(.5px);
         -webkit-transform: rotateZ(45deg) translateX(3.5px) translateY(.5px);
         -moz-transform: rotateZ(45deg) translateX(3.5px) translateY(.5px);
         -ms-transform: rotateZ(45deg) translateX(3.5px) translateY(.5px);
         -o-transform: rotateZ(45deg) translateX(3.5px) translateY(.5px);
 }
-    .burger:checked + .menu__burger > .menu__element::after{
+    .burger:checked + .burger__label > .burger__element::after{
         transform: rotateZ(-45deg) translateX(2.5px) translateY(.5px);
         -webkit-transform: rotateZ(-45deg) translateX(2.5px) translateY(.5px);
         -moz-transform: rotateZ(-45deg) translateX(2.5px) translateY(.5px);
