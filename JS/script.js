@@ -1,8 +1,9 @@
-const slider = document.querySelector('.swiper-container');
+import Swiper from 'swiper/bundle';
+const slider = document.querySelector('.swiper');
 
 function mobileSlider() {
   if (window.innerWidth <= 768 && slider.dataset.mobile == 'false') {
-    new Swiper(slider, {
+   const swiper = new Swiper(slider, {
       slidesPerView: 1,
       spaceBetween: 20,
       loop: true,
@@ -11,6 +12,10 @@ function mobileSlider() {
        	el: '.swiper-pagination',
           clickable: true,
             },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev'
+            }
            
     });
 
@@ -24,10 +29,10 @@ function mobileSlider() {
     }
   }
   console.log('slider')
-}
+};
 
-mobileSlider()
+console.log(mobileSlider());
 
 window.addEventListener('resize', () => {
   mobileSlider();
-});
+})
