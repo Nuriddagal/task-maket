@@ -661,6 +661,7 @@ label{
 .repaired{
     min-width: 0;
 }
+
 .repairedBrands__wrapper{
     display: flex;
     flex-wrap: wrap;
