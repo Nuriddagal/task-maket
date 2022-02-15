@@ -73,3 +73,10 @@
 .dark-themes .conteiner__box .about__text-2{
     color: lightsteelblue;
 }
+.dark-themes .repaired__header{
+    background: linear-gradient(90deg, darkslategray 0%, #212725 80.61%);
+}
+.dark-themes .repairedBrands__list{
+    background: darkslategray ;
+    border-color: darkcyan;
+}
