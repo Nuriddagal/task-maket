@@ -664,9 +664,10 @@ label{
 .repairedBrands__wrapper{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px 32px;
-    padding-left: 32px;
-    width: 100%;
+    /* gap: 16px 32px; */
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 2400px;
     overflow: hidden;
 }
 .repairedBrands__list{

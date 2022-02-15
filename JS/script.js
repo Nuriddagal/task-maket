@@ -1,10 +1,10 @@
 const slider = document.querySelector(".swiper");
 
 function mobileSlider() {
-  if (window.innerWidth <= 768 && slider.dataset.mobile === "false") {
+  if (window.innerWidth <= 438 && slider.dataset.mobile === "false") {
     const swiper = new Swiper(slider, {
-      slidesPerView: 1.5,
-      spaceBetween: 0,
+      slidesPerView: 1,
+      spaceBetween: 32,
       slideClass: "swiper-slide",
       pagination: {
         el: ".swiper-pagination",
@@ -16,16 +16,18 @@ function mobileSlider() {
       },
     });
 
-    slider.dataset.mobile = "true";
+    slider.dataset.mobile = "false";
   }
 
   if (window.innerWidth > 768) {
     slider.dataset.mobile = "false";
+    slider.classList.remove("swiper");
     if (slider.classList.contains("swiper-container-initialized")) {
-      mySwiper.destroy();
+      swiper.destroy();
     }
+  } else {
+    slider.classList.add("swiper");
   }
-  console.log(mobileSlider);
 }
 
 window.addEventListener("resize", () => {
