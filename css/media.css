@@ -232,6 +232,7 @@
     .repairedBrands__wrapper{
         flex-wrap: nowrap;
         margin-bottom: 36px;
+        overflow:visible;
     }
     .repaired__label{
         display: none;

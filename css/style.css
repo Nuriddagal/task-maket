@@ -658,14 +658,16 @@ label{
     margin-bottom: 30px;
 }
 /* slider */
-
+.repaired{
+    min-width: 0;
+}
 .repairedBrands__wrapper{
     display: flex;
     flex-wrap: wrap;
     gap: 16px 32px;
     padding-left: 32px;
-    overflow: hidden;
     width: 100%;
+    overflow: hidden;
 }
 .repairedBrands__list{
     display: inline-flex;
