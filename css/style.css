@@ -742,14 +742,18 @@ label{
     Height:56px;
     background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .repaired__title{
     font-family: 'TT Lakes Condensed';
     font-size: 16px;
-    line-height: 60px;
+    line-height: 25px;
     letter-spacing: -0.2px;
     text-transform: uppercase;
-    text-indent: 32px;
+    padding: 0 0 0 15px;
     color: #7E7E82;
 }
 .repaired__checkbox{

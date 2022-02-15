@@ -209,6 +209,9 @@
         height: 90px;
         width: 80%;
     }
+    .repaired__header{
+        min-height: 80px;
+    }
     .repairedBrands{
         height: 100px;
         padding: 0 16px;
