@@ -668,7 +668,7 @@ label{
     /* gap: 16px 32px; */
     padding-left: 16px;
     padding-right: 16px;
-    width: 2400px;
+    width: 100%;
     overflow: hidden;
 }
 .repairedBrands__list{
@@ -764,6 +764,12 @@ label{
 }
 .repaired__checkbox:checked ~ .repaired__label .repaired__more-2{
     display: none;
+}
+.repaired__checkbox:checked ~ .repaired__label  .repaired__arrow{
+    transform: rotateZ(360deg);
+}
+.repaired__arrow{
+    transform: rotateZ(180deg);
 }
 .repaired__more-1{
     display: none;

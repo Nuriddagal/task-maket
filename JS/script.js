@@ -36,3 +36,6 @@ if (window.innerWidth < 420) {
     },
   });
 }
+if (window.innerWidth > 420) {
+  swiper.destroy();
+}
