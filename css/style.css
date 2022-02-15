@@ -796,5 +796,13 @@ label{
 .repaired__checkbox:checked ~ .repairedBrands__wrapper{
     height: 175px;
 }
-
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background: #DDDDDD;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background: #B5B6BC;
+}
 /* end-slider */
