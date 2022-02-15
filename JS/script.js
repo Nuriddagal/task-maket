@@ -1,5 +1,5 @@
 const slider = document.querySelector(".swiper");
-
+const crap = document.querySelector(".swiper-wrapper");
 // function mobileSlider() {
 //   if (window.innerWidth <= 428 && slider.dataset.mobile === "false") {
 //     const swiper = new Swiper(slider, {
@@ -25,7 +25,7 @@ const slider = document.querySelector(".swiper");
 // window.addEventListener("resize", () => {
 //   mobileSlider();
 // });
-if (window.innerWidth < 420) {
+if (window.innerWidth < 520) {
   const swiper = new Swiper(slider, {
     slidesPerView: 1.2,
     spaceBetween: 12,
@@ -35,7 +35,4 @@ if (window.innerWidth < 420) {
       clickable: true,
     },
   });
-}
-if (window.innerWidth > 420) {
-  swiper.destroy();
 }

@@ -204,6 +204,21 @@
         right: 70px;
     }
 }
+@media (min-width:520px) {
+    .repairedBrands__wrapper{
+        gap: 16px 32px; 
+    }
+}
+@media (max-width:520px) {
+    .repairedBrands__wrapper{
+        flex-wrap: nowrap;
+        overflow:visible;
+    }
+    .repaired__label{
+        display: none;
+    }
+}
+
 @media (max-width:420px) {
     .repairedBrands__wrapper{
         height: 90px;
@@ -252,13 +267,9 @@
         left: 65px;
     }
     .repairedBrands__wrapper{
-        flex-wrap: nowrap;
         margin-bottom: 36px;
-        overflow:visible;
     }
-    .repaired__label{
-        display: none;
-    }
+    
 }
 @media (max-width:320px) {
     .logo-1{
