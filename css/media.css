@@ -172,6 +172,14 @@
         margin:0;
         width: 100%;
     }
+    .logo-2{
+        position: relative;
+        top: -23px;
+    }
+    .menu__search{
+        position: absolute;
+        top: 15px;
+    }
     .conteiner{
         width: 100%;
         margin: 0;
