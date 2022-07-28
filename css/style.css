@@ -680,10 +680,8 @@ label{
 }
 .repairedBrands__list{
     display: inline-flex;
-    max-width: 240px;
-    max-height: 72px;
-    min-width: 240px;
-    min-height: 72px;
+    width: 240px;
+    height: 72px;
     border: 1px solid #EAEAEA;
     border-radius: 6px;
     justify-content: space-between;
@@ -822,10 +820,8 @@ label{
 }
 .repairedTypes__list{
     display: inline-flex;
-    max-height: 160px;
-    max-width: 240px;
-    min-height: 160px;
-    min-width: 240px;
+    height: 160px;
+    width: 240px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
     border-radius: 6px;
