@@ -1,37 +1,24 @@
-const slider = document.querySelector(".swiper");
+const sliderOne = document.querySelector(".repairedBrands");
+const sliderTwo = document.querySelector(".repairedTypes");
 const crap = document.querySelector(".swiper-wrapper");
-// function mobileSlider() {
-//   if (window.innerWidth <= 428 && slider.dataset.mobile === "false") {
-//     const swiper = new Swiper(slider, {
-//       slidesPerView: 1.2,
-//       spaceBetween: 12,
-//       slideClass: "swiper-slide",
-//       pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//       },
-//     });
-
-//     slider.dataset.mobile = "true";
-//   }
-
-//   if (window.innerWidth > 768) {
-//     slider.dataset.mobile = "false";
-//     if (slider.classList.contains("swiper-container-initialized")) {
-//       swiper.destroy();
-//     }
-//   }
-// }
-// window.addEventListener("resize", () => {
-//   mobileSlider();
-// });
 if (window.innerWidth < 520) {
-  const swiper = new Swiper(slider, {
+  const swiper = new Swiper(sliderOne, {
     slidesPerView: 1.2,
-    spaceBetween: 12,
+    spaceBetween: 32,
     slideClass: "swiper-slide",
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+if (window.innerWidth < 520) {
+  const swiper = new Swiper(sliderTwo, {
+    slidesPerView: 1.2,
+    spaceBetween: 32,
+    slideClass: "swiper-slide",
+    pagination: {
+      el: ".repairedTypes__pagination",
       clickable: true,
     },
   });

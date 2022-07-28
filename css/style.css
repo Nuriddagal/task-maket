@@ -5,10 +5,20 @@
 @font-face {
     font-family: 'TT Lakes Condensed';
     src: url(../fonts/TTLakesCondensed-Regular.eot);
-    src: local('TT Lakes Condensed Regular'), local('TTLakesCondensed-Regular'),
-        url('TTLakesCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+    src: local('TT Lakes Condensed '), local('TTLakesCondensed-Regular'),
+        url('TTLakesCondensed-Regular?#iefix') format('embedded-opentype'),
         url(../fonts/TTLakesCondensed-Regular.woff) format('woff'),
         url(../fonts/TTLakesCondensed-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(../fonts/TTLakes-Medium.eot);
+    src: local('TT Lakes'), local('TTLakes'),
+        url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url(../fonts/TTLakes-Medium.woff) format('woff'),
+        url(../fonts/TTLakes-Medium.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,28 +33,28 @@
     font-style: italic;
 }
 @font-face {
-    font-family: 'TT Lakes Condensed';
-    src: url(../fonts/TTLakesCondensed-Bold.eot);
-    src: local('TT Lakes Condensed Bold'), local('TTLakesCondensed-Bold'),
-        url('TTLakesCondensed-Bold.eot?#iefix') format('embedded-opentype'),
-        url(../fonts/TTLakesCondensed-Bold.woff) format('woff'),
-        url(../fonts/TTLakesCondensed-Bold.ttf) format('truetype');
+    font-family: 'TT Lakes Condensed-medium';
+    src: url(../fonts/TTLakesCompressed-Medium.eot);
+    src: local('TT Lakes Condensed'), local('TTLakesCondensed'),
+        url('TTLakesCompressed-Medium.eot?#iefix') format('embedded-opentype'),
+        url(../fonts/TTLakesCompressed-Medium.woff) format('woff'),
+        url(../fonts/TTLakesCompressed-Medium.ttf) format('truetype');
     font-weight: bold;
     font-style: normal;
-}
+} 
 
 html,body{
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 100%;
 }
 body{
     background-color: #F8F8F8;
-    
     font-family: 'TT Lakes Condensed', sans-serif;
     font-weight: normal;
     font-style: normal;
-    padding: 0;
-    margin: 0;
+    
 }
 .conteiner > ul{
     margin: -20px;
@@ -455,7 +465,7 @@ main{
     background-color: white;
 }
 .header__communication > li > a{
-    font-family: 'TT Lakes Condensed';
+    font-family: 'TT Lakes';
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
@@ -665,16 +675,15 @@ label{
 .repairedBrands__wrapper{
     display: flex;
     flex-wrap: wrap;
-    /* gap: 16px 32px; */
-    padding-left: 16px;
-    padding-right: 16px;
     width: 100%;
     overflow: hidden;
 }
 .repairedBrands__list{
     display: inline-flex;
-    width: 240px;
-    height: 72px;
+    max-width: 240px;
+    max-height: 72px;
+    min-width: 240px;
+    min-height: 72px;
     border: 1px solid #EAEAEA;
     border-radius: 6px;
     justify-content: space-between;
@@ -740,32 +749,32 @@ label{
 .repaired__header{
     Width:100%;
     Height:56px;
-    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    background: linear-gradient(30deg, #F8F8F8 0%, #FFFFFF 90.61%);
     margin-bottom: 16px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    
 }
 .repaired__title{
-    font-family: 'TT Lakes Condensed';
+    font-family: 'TT Lakes';
+    font-weight: 200;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 24px;
     letter-spacing: -0.2px;
     text-transform: uppercase;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 32px;
     color: #7E7E82;
 }
-.repaired__checkbox{
+.repairedBrands__checkbox{
     display: none;
 }
-.repaired__label{
+.repairedBrands__label{
     flex-direction: row;
+    margin-bottom: 50px;
 }
-.repaired__checkbox:checked ~ .repaired__label .repaired__more-2{
+.repairedBrands__checkbox:checked ~ .repairedBrands__label .repaired__more-2{
     display: none;
 }
-.repaired__checkbox:checked ~ .repaired__label  .repaired__arrow{
+.repairedBrands__checkbox:checked ~ .repairedBrands__label  .repaired__arrow{
     transform: rotateZ(360deg);
 }
 .repaired__arrow{
@@ -790,11 +799,11 @@ label{
     width: 9px;
     margin: 16px 5px 0 32px;
 }
-.repaired__checkbox:checked ~ .repaired__label .repaired__more-1{
+.repairedBrands__checkbox:checked ~ .repairedBrands__label .repaired__more-1{
     display: inline-block;
 }
-.repaired__checkbox:checked ~ .repairedBrands__wrapper{
-    height: 175px;
+.repairedBrands__checkbox:checked ~ .repairedBrands__wrapper{
+    height: 195px;
 }
 .swiper-pagination-bullet{
     width: 12px;
@@ -806,3 +815,62 @@ label{
     background: #B5B6BC;
 }
 /* end-slider */
+/* repairedTypes */
+.repairedTypes__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.repairedTypes__list{
+    display: inline-flex;
+    max-height: 160px;
+    max-width: 240px;
+    min-height: 160px;
+    min-width: 240px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    margin: 24px 0px 24px 32px;
+    justify-content: space-between;
+}
+.repairedTypes__title{
+    font-family: 'TT Lakes';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+/* RT checkbox styles */
+.repairedTypes__checkbox{
+    display: none;
+}
+.repairedTypes__label{
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.repairedTypes__checkbox:checked ~ .repairedTypes__label .repaired__more-2{
+    display: none;
+}
+.repairedTypes__checkbox:checked ~ .repairedTypes__label  .repaired__arrow{
+    transform: rotateZ(360deg);
+}
+.repairedTypes__checkbox:checked ~ .repairedTypes__label .repaired__more-1{
+    display: inline-block;
+}
+.repairedTypes__checkbox:checked ~ .repairedTypes{
+    height: 190px;
+}
+.repairedTypes__label{
+    padding: 0%;
+    margin: 0%;
+}
+/* RT Checkbox styles END */
+.repairedTypes__arrow{
+    align-self: flex-end;
+    width:40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    background: url(../img/slide-img/dropdown.png) no-repeat center;
+    border-radius: 20px;
+}

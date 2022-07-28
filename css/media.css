@@ -167,7 +167,7 @@
     }
 } 
 @media (max-width:640px) {
-    body{
+    html, body{
         padding: 0;
         margin:0;
         width: 100%;
@@ -213,21 +213,32 @@
     }
 }
 @media (min-width:520px) {
-    .repairedBrands__wrapper{
-        gap: 16px 32px; 
+    .repairedBrands__list{
+       margin: 24px 0 0 32px;
     }
 }
 @media (max-width:520px) {
-    .repairedBrands__wrapper{
+    .repairedBrands__list,.repairedTypes__list{
+        margin: 0;
+    }
+    .repairedBrands__wrapper, .repairedTypes__wrapper{
         flex-wrap: nowrap;
         overflow:visible;
     }
-    .repaired__label{
+    .repairedTypes__wrapper, .repairedTypes{
+        height: 250px;
+    }
+    .repairedBrands__label, .repairedTypes__label{
         display: none;
     }
+    .repairedBrands, .repairedTypes{
+        height: 110px;
+        padding: 0 16px;
+    } 
 }
 
 @media (max-width:420px) {
+    
     .repairedBrands__wrapper{
         height: 90px;
         width: 80%;
@@ -235,10 +246,7 @@
     .repaired__header{
         min-height: 80px;
     }
-    .repairedBrands{
-        height: 110px;
-        padding: 0 16px;
-    } 
+    
     .connection__left{
         left: 4%;
     }
@@ -277,7 +285,6 @@
     .repairedBrands__wrapper{
         margin-bottom: 36px;
     }
-    
 }
 @media (max-width:320px) {
     .logo-1{
