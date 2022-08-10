@@ -25,17 +25,19 @@
      }
      .menu{
          position: absolute;
-         transform: translateX(-320px);
+         top:0;
+         left: -320px;
+          /* transform: translateX(-320px); */
          transition: 1s ease;
          -webkit-transition: 1s ease;
          -moz-transition: 1s ease;
          -ms-transition: 1s ease;
-         -o-transition: 1s ease;
+         -o-transition: 1s ease; 
          z-index: 2;
-         -webkit-transform: translateX(-320px);
+         /* -webkit-transform: translateX(-320px);
          -moz-transform: translateX(-320px);
          -ms-transform: translateX(-320px);
-         -o-transform: translateX(-320px);
+         -o-transform: translateX(-320px); */
 }
     
     .logo-2{
@@ -49,12 +51,13 @@
         z-index: 3;
     }
     .burger:checked ~ .menu{
-        transform: translateX(0);
+        left: 0%;
+        /* transform: translateX(0); */
         box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-        -webkit-transform: translateX(0);
+        /* -webkit-transform: translateX(0);
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
-        -o-transform: translateX(0);
+        -o-transform: translateX(0); */
 }
     .burger:checked ~ .menu .logo{
         display: none;

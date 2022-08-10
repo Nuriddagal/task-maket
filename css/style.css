@@ -62,7 +62,7 @@ body{
 .conteiner {
     width: 100%;
     height: 110%;
-    display: flex;
+    display: flex; 
     flex-direction: row;
     flex-wrap: nowrap;
     margin: -20px auto;
@@ -70,6 +70,19 @@ body{
     position: relative;
 }
 
+.footer{
+    height: 85px;
+    display: flex;
+    border-top: 2px solid #D9FFF5;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-box{
+    text-align: right;
+    padding-left: 5px;
+    width: 33.33%;
+}
 .header {
     width: 100%;
 	display: flex;	
@@ -83,7 +96,7 @@ body{
     display: flex;
     padding: 0 20px;
     margin-top: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     height: fit-content;  
 }
 .menu{
@@ -94,6 +107,7 @@ body{
 }
 .menu__vertical{
     width: 250px;
+    margin-top: 40px;
 }
 .burger__label{
     display: none;
@@ -111,9 +125,7 @@ body{
 }
 .menu__search{
     background-color: #FF3E79;
-    width: 40px;
     position: absolute;
-    height: 40px;
     margin-top: 5px;
     border-radius: 50%;
     background-image:url(../img/ic/icon.svg);
@@ -171,40 +183,30 @@ body{
 .menu__bottom{
     position: relative;
 }
-.menu__phone{
+.menu__search, .menu__phone, .menu__chat, .menu__profile, .right__chat, .right__phone, .right__profile, .connection__doit, .connection__just, .burger__label, .doit::after, .just::after, .repairedBrands__arrow, .repairedTypes__arrow{
     width: 40px;
     height: 40px;
+}
+.menu__phone, .menu__chat, .menu__profile, .right__chat, .right__phone, .right__profile, .burger__label{
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+.menu__phone{
     background-image: url(../img/ic/call.svg);
     position: absolute;
     left: 20px;
 
 }
 .menu__chat{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     background-image: url(../img/ic/chat.svg);
     position: absolute;
     left: 80px;
     
 }
 .menu__profile{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     background-image: url(../img/ic/profile.svg);
     position: absolute;
     left: 140px;
@@ -249,46 +251,23 @@ main{
 }
   /* connection right  */
 .right__phone{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     background-image: url(../img/ic/call.svg);
     position: absolute;
     right: 320px;
 
 }
 .right__chat{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     background-image: url(../img/ic/chat.svg);
     position: absolute;
     right: 260px;
     
 }
 .right__profile{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     background-image: url(../img/ic/profile.svg);
     position: absolute;
     right: 200px;
 }
 .connection__doit{
-    width: 40px;
-    height: 40px;
     background-image: url(../img/b4/repair.svg);
     background-repeat: no-repeat;
     background-position: right;
@@ -297,8 +276,6 @@ main{
     background-size: 40px; 
 }
 .connection__just{
-    width: 40px;
-    height: 40px;
     background-image: url(../img/gg/checkstatus.svg);
     background-repeat: no-repeat;
     background-position: right;
@@ -333,14 +310,7 @@ main{
 .burger__label{
     position: relative;
     margin: 20px -15px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
     background-color: #FF3E79;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     z-index: 1;
 }
 .burger:checked ~ .burger__label > .burger__element{
@@ -394,10 +364,6 @@ main{
     -ms-transition: .4s all;
     -o-transition: .4s all;
 }
-.burger__label{
-    width: 40px;
-    height: 40px;
-}
 .menu__line{
     position: absolute;
     width: 3px;
@@ -406,19 +372,19 @@ main{
     left: 55px;
     top:25px;
 }
+.logo, .logo-1{
+    width: 98px;
+    height: 52px;
+}
 .logo{
     margin-left: 35px;
     position: absolute; 
-    width: 98px;
-    height: 52px;
     background-image: url(../img/Group.svg);
     background-size: contain;
 }
 .logo-1{
     margin-left: 35px;
     position: absolute; 
-    width: 98px;
-    height: 52px;
     background-image: url(../img/Group.svg);
     background-size: contain;
     left: 100px;
@@ -440,16 +406,14 @@ main{
 .header__communication > li{
     margin-right: 50px ;
 }
+.theme-button, .header__nav > li > a:visited{
+    border-radius: 5px;
+}
 .theme-button{
     padding: .33em .66em .33em 1.66em;
     border: 1px solid rosybrown;
-    border-radius: 5px;
     margin-bottom:  10px ;
     transform: translateY(-10px);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
     font-family: 'TT lakes Condensed';
     font-size: 15px;
     background-image: url(../img/ic/light_mode_black_24dp.svg);
@@ -483,9 +447,6 @@ main{
 }
 .doit::after{
     content: '';
-    width: 40px;
-    height: 40px;
-
     background-image: url(../img/b4/repair.svg);
     background-repeat: no-repeat;
     background-position: right;
@@ -496,8 +457,6 @@ main{
 }
 .just::after{
     content: '';
-    width: 40px;
-    height: 40px;
     background-image: url(../img/gg/checkstatus.svg);
     background-repeat: no-repeat;
     background-position: right;
@@ -545,13 +504,8 @@ a{
 } */
 .header__nav > li > a:visited{
     border: 2px solid lightgray;
-    border-radius: 5px;
     background: white;
     padding: 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
 }
 
 .title {
@@ -690,8 +644,6 @@ label{
     background-color: #fff;
 }
 .repairedBrands__arrow{
-    width:40px;
-    height: 40px;
     border: 2px solid #FF3E79;
     background: url(../img/slide-img/dropdown.png) no-repeat center;
     border-radius: 20px;
@@ -864,8 +816,6 @@ label{
 /* RT Checkbox styles END */
 .repairedTypes__arrow{
     align-self: flex-end;
-    width:40px;
-    height: 40px;
     border: 2px solid #FF3E79;
     background: url(../img/slide-img/dropdown.png) no-repeat center;
     border-radius: 20px;
