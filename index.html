@@ -16,41 +16,41 @@
 
 <body class="light-themes">
     <div class="conteiner ">
-            <input type="checkbox" id="burger" class="burger">
-            <label for="burger" class="burger__label"><span class="burger__element"></span>
-                </label>
-                <ul>
-                <span class="line-1"></span>
-                <li><a href="#" class="logo-1"><span></span></a></li>
-            </ul>
-            <menu class="menu">
-                <aside class="menu__vertical">
-                    <ul class="menu__top">
-                        <li><a href="#" class="menu__logo logo-2"><img src="/img/Group.svg" alt=""></a></li>
-                        <li><a href="#" class="menu__search"></a></li>
-                    </ul>
-                    <ul class="menu__middle">
-                        <li><a href="#">Ремонт техники</a></li>
-                        <li><a class="menu__link-active" href="#">Услуги и сервисы </a></li>
-                        <li><a href="#">Корпоративным клиентам</a></li>
-                        <li><a href="#">Продавцам техники</a></li>
-                        <li><a href="#">Партнерам</a></li>
-                        <li><a href="#">Производителям</a></li>
-                        <li><a href="#">Наши сервисные центры</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                    <ul class="menu__bottom">
-                        <li><a href="#" class="menu__phone">
-                        </a></li>
-                    <li><a href="#" class="menu__chat"></a></li>
-                    <li><a href="#" class="menu__profile"></a></li>
-                        <li><a href="#" class="menu__mail">mail@cps.com</a></li>
-                    <li class="menu__li"><a class="menu__number" href="tel:+7-800-890-8900">8 800 890 8900</a></li>
-                    <li><a href="#" class="menu__ru-active">RU</a> <a href="#" class="menu__en">EN</a> <a href="#" class="menu__ch">CH</a></li> 
-                    <button type="button" class="menu__theme theme-button">Изменить тему</button>
+        <input type="checkbox" id="burger" class="burger">
+        <label for="burger" class="burger__label"><span class="burger__element"></span>
+            </label>
+            <ul>
+            <span class="line-1"></span>
+            <li><a href="#" class="logo-1"><span></span></a></li>
+        </ul>
+        <menu class="menu">
+            <aside class="menu__vertical">
+                <ul class="menu__top">
+                    <li><a href="#" class="menu__logo logo-2"><img src="/img/Group.svg" alt=""></a></li>
+                    <li><a href="#" class="menu__search"></a></li>
                 </ul>
-                </aside>
-            </menu>
+                <ul class="menu__middle">
+                    <li><a href="#">Ремонт техники</a></li>
+                    <li><a class="menu__link-active" href="#">Услуги и сервисы </a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Продавцам техники</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                    <li><a href="#">Производителям</a></li>
+                    <li><a href="#">Наши сервисные центры</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="menu__bottom">
+                    <li><a href="#" class="menu__phone">
+                    </a></li>
+                <li><a href="#" class="menu__chat"></a></li>
+                <li><a href="#" class="menu__profile"></a></li>
+                    <li><a href="#" class="menu__mail">mail@cps.com</a></li>
+                <li class="menu__li"><a class="menu__number" href="tel:+7-800-890-8900">8 800 890 8900</a></li>
+                <li><a href="#" class="menu__ru-active">RU</a> <a href="#" class="menu__en">EN</a> <a href="#" class="menu__ch">CH</a></li> 
+                <button type="button" class="menu__theme theme-button">Изменить тему</button>
+            </ul>
+            </aside>
+        </menu>
         
         <div class="conteiner__box">
         <header class="header">
@@ -82,7 +82,7 @@
                 <li><a href="#">Отзывы</a></li>
             </nav>
         </header>
-        <main>
+        <main class="main">
             <section class="about">
                 <div class="about__conteiner">
                     <p class="about__text-1">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
@@ -91,6 +91,11 @@
                     <label for="check" class="about__more more">
                         <input type="checkbox" id="check" class="about__checkbox checkbox" checked>
                         <p class="about__text-2">
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                            большое
+                            количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в
+                            свою
+                            очередь, советуют нас родным и близким.
                             Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
                             большое
                             количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в
@@ -149,14 +154,37 @@
                 
                 <label for="repairedTypes__checkbox" class="repairedTypes__label"><img src="./img/b42/icon.svg" alt="" class="repaired__arrow"><span class="repaired__more-1">Показать больше</span><span class="repaired__more-2">Скрыть</span></label>
             </div>
-                
+            </section>
+            <section class="price">
+                <header class="price__header"><h2 class="price__titles">цены на услуги</h2></header>
+                <div class="price__container swiper">
+                <li><p class="price__service">Ремонтные услуги</p>
+                    <p class="price__value">Цена</p>
+                    <p class="price__period">Срок</p>
+                    <span></span>
+            </li>
+                    <div class="price__box swiper-wrapper">
+                        <li class="price__list swiper-slide"><p class="price__title"><span class="service">Ремонтные услуги</span> <span>Диагностика</span></p> <p class="price__size"><span class="value">Цена</span> <span>Бесплатно</span></p> <p class="price__time"><span class="period">Срок</span> <span>30 мин</span></p> <button class="price__btn"><p>Заказать</p><span></span></button></li>
+                        <li class="price__list swiper-slide"> <p class="price__title"> <span class="service">Ремонтные услуги</span> <span>Замена дисплея</span></p> <p class="price__size"><span class="value">Цена</span><span>1 000 ₽</span> </p> <p class="price__time"><span class="period">Срок</span> <span>30-120 мин</span></p> <button class="price__btn"><p>Заказать</p><span></span></button></li>
+                        <li class="price__list swiper-slide"><p class="price__title"><span class="service">Ремонтные услуги</span> <span>Замена полифонического динамика</span></p> <p class="price__size"><span class="value">Цена</span>1 000 ₽<span></span> </p> <p class="price__time"><span class="period">Срок</span> <span>30-120 мин</span></p> <button class="price__btn"><p>Заказать</p><span></span></button></li>
+                        <li class="price__list swiper-slide"><p class="price__title"><span class="service">Ремонтные услуги</span> <span>Тестирование с выдачей технического заключения</span> </p> <p class="price__size"><span class="value">Цена</span> <span>1 000 ₽</span></p> <p class="price__time"><span class="period">Срок</span><span>30-120 мин</span></p> <button class="price__btn"><p>Заказать</p><span></span></button> </li>
+                        <li class="price__list swiper-slide"><p class="price__title"><span class="service">Ремонтные услуги</span> <span>Замена программного обеспечения</span></p> <p class="price__size"><span class="value">Цена</span><span>1 000 ₽</span> </p> <p class="price__time"><span class="period">Срок</span> <span>30-120 мин</span></p> <button class="price__btn"><p>Заказать</p><span></span></button></li>
+                    </div>
+                    <div class="swiper-pagination price__pagination"></div>
+                </div>
+                <span class="price__info">
+                    <p class="price__ndsInfo">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+                    <p class="price__GetCommercial"><a href="#">Получить коммерческое предложение > </a> </p>
+                </span>
             </section>
         </main>
         <footer class="footer">
-        <p class="footer__title">© 2019 CPS
-            Разработано командой Apesong </p>
-        <p class="privacy-link"><a href="#">Политика конфиденциальности</a></p>
-        <p class="info-box">Информация, размещенная на данной странице, не является публичной офертой</p>
+        <div class="footer__box">
+            <p class="footer__title">© 2019 CPS<br>
+            Разработано командой NURID-INDUSTRIES </p>
+            <p class="privacy-link"><a href="#">Политика конфиденциальности</a></p>
+            <p class="info-box">Информация, размещенная на данной странице, не является публичной офертой</p>
+        </div>
     </footer>
     </div>
     

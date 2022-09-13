@@ -9,7 +9,12 @@
     }
 }
 @media (max-width:1200px) {
-    
+    body{
+        background: #F8F8F8;
+    }
+    .menu__top{
+        margin-top: -17%;
+    }
     .connection{
         display: flex;
         flex-direction: column;
@@ -19,27 +24,23 @@
      }
      .line-1{
          display: inline;
+         top: 25px;
      }
      .logo-1{
          display: inline;
+         top: 15px;
      }
      .menu{
-         position: absolute;
+         position: fixed;
          top:0;
          left: -320px;
-          /* transform: translateX(-320px); */
          transition: 1s ease;
          -webkit-transition: 1s ease;
          -moz-transition: 1s ease;
          -ms-transition: 1s ease;
          -o-transition: 1s ease; 
          z-index: 2;
-         /* -webkit-transform: translateX(-320px);
-         -moz-transform: translateX(-320px);
-         -ms-transform: translateX(-320px);
-         -o-transform: translateX(-320px); */
 }
-    
     .logo-2{
         margin-left: 70%;
     }
@@ -47,17 +48,16 @@
         display: inline-block;
         position:absolute;
         left: 50px;
-        top:23px;
+        top:1px;
         z-index: 3;
     }
+    .burger:checked ~ .burger__label{
+        position: fixed;
+    }
     .burger:checked ~ .menu{
+        position: fixed;
         left: 0%;
-        /* transform: translateX(0); */
         box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-        /* -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0); */
 }
     .burger:checked ~ .menu .logo{
         display: none;
@@ -99,7 +99,6 @@
     
 } 
 @media (max-width:920px) {
-
     .connection{
        display: flex;
        justify-content: space-between;
@@ -120,6 +119,10 @@
    }
 } 
 @media (max-width:863px) {
+    .repairedTypes__list{
+        width: 230px;
+        margin-left: 20px;
+    }
     .connection__left{
         margin:8px 0 0 0;
     }
@@ -152,10 +155,9 @@
         flex-wrap: wrap;
      }
     .about > img{
-       width: 100%;
+        width: 100%;
         margin:20px 0;
-        
-     }
+    }
      .right__chat{
         display:none ;
      }
@@ -169,7 +171,100 @@
         width: 224px;
     }
 } 
+@media (max-width:760px) {
+    .footer__box{
+        height: 105px;
+        flex-direction: column;
+    }
+    .footer__box > p {
+        width: 100%;
+        text-align: center;
+    }
+    .price__info{
+        margin-left: 24px;
+        width: 70%;
+    }
+    .price__box{
+        background: none;
+        height: 240px;
+    }
+    .price__container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .price__list{
+        position: relative;
+        background-color: white;
+        width: 260px;
+        height: 200px;
+        flex-direction: column;
+        border-radius: 6px;
+    }
+    .price__list::after{
+        height: 0;
+    }
+    .price__title, .price__size, .price__time{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        line-height: 1;
+        height: fit-content;
+    }
+    .price__time{
+        position: absolute;
+        bottom: 20px;
+        left:18px;
+    }
+    .price__title, .price__size, .price__time > span{
+        font-family: 'TT Lakes';
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+    }
+    .price__btn{
+        align-self: flex-end;
+    }
+    .price__container > li{
+        display: none;
+    }
+    .service, .value, .period{
+        margin-bottom: 4px;
+        display: inline-block;
+        font-family: "TT Lakes Condensed";
+    }
+    .price__time > .period{
+        font-family: "TT Lakes Condensed";
+    }
+    .price__box{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: visible;
+    }
+    .repairedBrands__list,.repairedTypes__list{
+        margin: 0;
+    }
+    .repairedBrands__wrapper, .repairedTypes__wrapper{
+        flex-wrap: nowrap;
+        overflow:visible;
+    }
+    .repairedTypes__wrapper, .repairedTypes{
+        height: 240px;
+    }
+    .repairedBrands__label, .repairedTypes__label{
+        display: none;
+    }
+    .repairedBrands, .repairedTypes{
+        height: 110px;
+        padding: 0 16px;
+    } 
+}
 @media (max-width:640px) {
+    .about > img{
+        width: 90%;
+        margin:20px 0;
+    }
+    
     html, body{
         padding: 0;
         margin:0;
@@ -177,7 +272,7 @@
     }
     .logo-2{
         position: relative;
-        top: -23px;
+        top: -3px;
     }
     .menu__search{
         position: absolute;
@@ -215,31 +310,11 @@
         right: 70px;
     }
 }
-@media (min-width:520px) {
+@media (min-width:760px) {
     .repairedBrands__list{
        margin: 24px 0 0 32px;
     }
 }
-@media (max-width:520px) {
-    .repairedBrands__list,.repairedTypes__list{
-        margin: 0;
-    }
-    .repairedBrands__wrapper, .repairedTypes__wrapper{
-        flex-wrap: nowrap;
-        overflow:visible;
-    }
-    .repairedTypes__wrapper, .repairedTypes{
-        height: 250px;
-    }
-    .repairedBrands__label, .repairedTypes__label{
-        display: none;
-    }
-    .repairedBrands, .repairedTypes{
-        height: 110px;
-        padding: 0 16px;
-    } 
-}
-
 @media (max-width:420px) {
     
     .repairedBrands__wrapper{
@@ -369,5 +444,9 @@
         background-size: 30px;
         top: 20px;
         right: 50px;
+    }
+    .logo-2{
+        width:60px;
+        background-size: 60px;
     }
 }

@@ -1,9 +1,9 @@
 const sliderOne = document.querySelector(".repairedBrands");
 const sliderTwo = document.querySelector(".repairedTypes");
-const crap = document.querySelector(".swiper-wrapper");
-if (window.innerWidth < 520) {
+const sliderThree = document.querySelector(".price__container");
+if (window.innerWidth < 760) {
   const swiper = new Swiper(sliderOne, {
-    slidesPerView: 1.2,
+    slidesPerView: 1.6,
     spaceBetween: 32,
     slideClass: "swiper-slide",
     pagination: {
@@ -12,13 +12,24 @@ if (window.innerWidth < 520) {
     },
   });
 }
-if (window.innerWidth < 520) {
+if (window.innerWidth < 760) {
   const swiper = new Swiper(sliderTwo, {
-    slidesPerView: 1.2,
+    slidesPerView: 1.6,
     spaceBetween: 32,
     slideClass: "swiper-slide",
     pagination: {
       el: ".repairedTypes__pagination",
+      clickable: true,
+    },
+  });
+}
+if (window.innerWidth < 760) {
+  const swiper = new Swiper(sliderThree, {
+    slidesPerView: 1.6,
+    spaceBetween: 32,
+    slideClass: "swiper-slide",
+    pagination: {
+      el: ".price__pagination",
       clickable: true,
     },
   });
