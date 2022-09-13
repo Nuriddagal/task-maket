@@ -172,6 +172,7 @@
     }
 } 
 @media (max-width:760px) {
+    
     .footer__box{
         height: 105px;
         flex-direction: column;
@@ -185,6 +186,7 @@
         width: 70%;
     }
     .price__box{
+        padding-left: 16px;
         background: none;
         height: 240px;
     }
@@ -195,7 +197,7 @@
     .price__list{
         position: relative;
         background-color: white;
-        width: 260px;
+        min-width: 260px;
         height: 200px;
         flex-direction: column;
         border-radius: 6px;

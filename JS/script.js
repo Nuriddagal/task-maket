@@ -3,8 +3,8 @@ const sliderTwo = document.querySelector(".repairedTypes");
 const sliderThree = document.querySelector(".price__container");
 if (window.innerWidth < 760) {
   const swiper = new Swiper(sliderOne, {
-    slidesPerView: 1.6,
-    spaceBetween: 32,
+    slidesPerView: 1.2,
+    spaceBetween: 24,
     slideClass: "swiper-slide",
     pagination: {
       el: ".swiper-pagination",
@@ -14,8 +14,8 @@ if (window.innerWidth < 760) {
 }
 if (window.innerWidth < 760) {
   const swiper = new Swiper(sliderTwo, {
-    slidesPerView: 1.6,
-    spaceBetween: 32,
+    slidesPerView: 1.2,
+    spaceBetween: 24,
     slideClass: "swiper-slide",
     pagination: {
       el: ".repairedTypes__pagination",
@@ -25,8 +25,8 @@ if (window.innerWidth < 760) {
 }
 if (window.innerWidth < 760) {
   const swiper = new Swiper(sliderThree, {
-    slidesPerView: 1.6,
-    spaceBetween: 32,
+    slidesPerView: 1,
+    spaceBetween: 24,
     slideClass: "swiper-slide",
     pagination: {
       el: ".price__pagination",
