@@ -176,6 +176,7 @@
     .footer__box{
         height: 105px;
         flex-direction: column;
+        padding-top: 16px;
     }
     .footer__box > p {
         width: 100%;
